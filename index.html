@@ -226,8 +226,9 @@ footer{border-top:1px solid var(--border); padding:28px 0; margin-top:0;}
 <div class="wrap hero">
   <div class="hero-solo">
     <div class="eyebrow">whoami</div>
-    <h1 id="typed-name"><span style="color:var(--accent-2);">Bao</span> Nguyen</h1>
+    <h1 id="typed-name"><span style="color: var(--accent-2);">Bao</span> Nguyen</h1>
     <p class="lede">Junior AI/ML Engineer &amp; Full-Stack Developer building agentic AI systems, ML-powered platforms, and production-grade full-stack apps.</p>
+    <p class="lede"><span style="color: #ffb454;">// learning fast. building faster.</span></p>
     <div class="cta-row">
       <a href="resume.html" class="btn primary green">View Resume</a>
       <a href="portfolio.html" class="btn">See Portfolio</a>
@@ -276,16 +277,29 @@ document.querySelectorAll('.navlinks a').forEach(a=>{
   var el = document.getElementById('typed-name');
   if(!el) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  var text = el.textContent;
-  el.textContent = '';
+
+  var accentSpan = el.querySelector('span');
+  var accentText = accentSpan ? accentSpan.textContent : '';
+  var suffixText = el.textContent.slice(accentText.length);
+
+  el.innerHTML = '';
+
+  var accentNode = document.createElement('span');
+  accentNode.style.color = 'var(--accent-2)';
+  accentNode.textContent = accentText || 'Bao';
+  el.appendChild(accentNode);
+
+  var suffixNode = document.createTextNode('');
+  el.appendChild(suffixNode);
+
   var cursor = document.createElement('span');
   cursor.className = 'cursor';
-  el.appendChild(document.createTextNode(''));
   el.appendChild(cursor);
+
   var i = 0;
   function type(){
-    if(i <= text.length){
-      el.firstChild.textContent = text.slice(0, i);
+    if(i <= suffixText.length){
+      suffixNode.textContent = suffixText.slice(0, i);
       i++;
       setTimeout(type, 55);
     } else {
