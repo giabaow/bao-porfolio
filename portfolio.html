@@ -242,6 +242,10 @@ footer{border-top:1px solid var(--border); padding:28px 0; margin-top:0;}
           <li>JWT auth + role-based access control enforced server-side, and an append-only audit trail for safety findings</li>
           <li>Background scheduler proactively sweeps aircraft, airports, and crew every 15 minutes</li>
         </ul>
+        <div style="margin:16px 0; border-radius:8px; overflow:hidden;">
+          <img src="aeroops-ai/demos/agent_demo.png" alt="AeroOps Ops Dashboard - Live Traffic" style="width:100%; display:block; margin-bottom:10px; border-radius:4px;">
+          <img src="aeroops-ai/demos/flight_alert.png" alt="AeroOps Flight Alert & Weather" style="width:100%; display:block; border-radius:4px;">
+        </div>
         <div class="tags">
           <span class="tag">react</span><span class="tag">typescript</span><span class="tag">fastapi</span><span class="tag">langgraph</span><span class="tag">postgresql</span><span class="tag">docker</span>
         </div>
@@ -260,6 +264,12 @@ footer{border-top:1px solid var(--border); padding:28px 0; margin-top:0;}
           <li>Rule-based pricing calculator first, kept predictable and testable before layering in ML later</li>
           <li>Order-status flow enforced as a fixed sequence in code (quoted → in production → quality check → shipped → delivered)</li>
         </ul>
+        <div style="margin:16px 0; border-radius:8px; overflow:hidden; background:var(--bg-raise); border:1px solid var(--border);">
+          <video width="100%" controls style="display:block; border-radius:4px;">
+            <source src="aeroops-ai/demos/quoteflow-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <div class="tags">
           <span class="tag">react</span><span class="tag">redux-toolkit</span><span class="tag">typescript</span><span class="tag">django-rest-framework</span><span class="tag">postgresql</span><span class="tag">aws</span>
         </div>
@@ -303,7 +313,24 @@ footer{border-top:1px solid var(--border); padding:28px 0; margin-top:0;}
         <span class="badge-note">practice project</span>
         <div class="term-cmd">git clone github.com/giabaow/e-plantShopping</div>
         <h3>Paradise Nursery (e-plantShopping)</h3>
-        <p>A React + Redux houseplant shopping app — browse categorized plants, view details, and manage a cart with quantity controls and running totals. Forked and built out from an IBM Developer Skills Network starter as React/Redux practice.</p>
+        <p>A React + Redux houseplant shopping app — browse categorized plants (Air Purifying, Aromatic Fragrant), view details, and manage a cart with quantity controls and running totals. Features include product filtering, quantity adjustments, delete from cart, and real-time total price updates. Built as React/Redux practice from an IBM Developer Skills Network starter.</p>
+        <div style="margin:16px 0; display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:12px;">
+          <div style="border-radius:8px; overflow:hidden; border:1px solid var(--border);">
+            <img src="aeroops-ai/demos/screenshot1.png" alt="Paradise Nursery - Welcome Page" style="width:100%; display:block;">
+          </div>
+          <div style="border-radius:8px; overflow:hidden; border:1px solid var(--border);">
+            <img src="aeroops-ai/demos/screenshot2.png" alt="Paradise Nursery - Plant Catalog" style="width:100%; display:block;">
+          </div>
+          <div style="border-radius:8px; overflow:hidden; border:1px solid var(--border);">
+            <img src="aeroops-ai/demos/screenshot3.png" alt="Paradise Nursery - Shopping Cart" style="width:100%; display:block;">
+          </div>
+        </div>
+        <ul style="font-size:13px; color:var(--text-dim);">
+          <li><strong>Plant Catalog:</strong> Browse plants by category with descriptions, prices, and "Add to Cart" controls</li>
+          <li><strong>Shopping Cart:</strong> View cart items with running total ($63.00+), adjust quantities, and delete items</li>
+          <li><strong>Real-time Updates:</strong> Cart total updates dynamically as you change quantities</li>
+          <li><strong>Clean UI:</strong> Green accent design, responsive layout, product images and categories</li>
+        </ul>
         <div class="tags">
           <span class="tag">react</span><span class="tag">redux-toolkit</span><span class="tag">css</span>
         </div>
