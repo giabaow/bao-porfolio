@@ -232,6 +232,30 @@ footer{border-top:1px solid var(--border); padding:28px 0; margin-top:0;}
     <h2>Things I've Built</h2>
 
     <div class="term">
+      <div class="term-bar"><span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span><span class="term-title">~/projects/proteins</span></div>
+      <div class="term-body">
+        <div class="term-cmd">git clone github.com/giabaow/Proteins</div>
+        <h3>Proteins.1: EU Platform-Competitor Landscape</h3>
+        <p>An AI agent built for a diagnostics-startup hackathon challenge that automatically researches and maps European companies building single-molecule protein-detection platforms, helping the client identify its closest competitors and best first market opportunity.</p>
+        <ul>
+          <li>Multi-stage agentic pipeline (discover, analyze, rank, synthesize, position) combining LLM-driven extraction with deterministic scoring for reproducibility</li>
+          <li>Automated discovery and ranking of 30+ companies across web search, SEC EDGAR, openFDA, and ClinicalTrials.gov sources</li>
+          <li>Semantic search over vectorized source text (ChromaDB) to keep every output evidence-backed and traceable, avoiding fabricated claims</li>
+        </ul>
+        <div style="margin:16px 0; border-radius:8px; overflow:hidden; background:var(--bg-raise); border:1px solid var(--border);">
+          <video width="100%" controls style="display:block; border-radius:4px;">
+            <source src="proteins1-landscape/demovideo.mov" type="video/quicktime">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="tags">
+          <span class="tag">python</span><span class="tag">fastapi</span><span class="tag">chromadb</span><span class="tag">sqlite</span><span class="tag">docker</span>
+        </div>
+        <div class="term-links"><a href="https://github.com/giabaow/Proteins" target="_blank" rel="noopener">Code →</a></div>
+      </div>
+    </div>
+
+    <div class="term">
       <div class="term-bar"><span class="term-dot r"></span><span class="term-dot y"></span><span class="term-dot g"></span><span class="term-title">~/projects/aeroops-ai</span></div>
       <div class="term-body">
         <div class="term-cmd">git clone github.com/giabaow/aeroops-ai</div>
